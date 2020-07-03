@@ -14,7 +14,7 @@ function submitData( name, email ) {
       return res.json()
     } )
     .then( function ( obj ) {
-      document.body.innerHTML = obj[ "id" ]
+      document.getElementById('container').innerHTML = obj[ "id" ]
     } )
     .catch( function ( err ) {
       document.body.innerHTML = err.message
