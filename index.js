@@ -16,5 +16,7 @@ function submitData( n, e ) {
     .then( function ( obj ) {
       document.body.innerHTML = obj[ "id" ]
     } )
-   
+    .catch( function ( err ) {
+      document.body.innerHTML = err.message
+    } )
 }
