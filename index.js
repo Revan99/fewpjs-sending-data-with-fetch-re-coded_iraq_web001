@@ -17,6 +17,6 @@ function submitData( name, email ) {
       document.getElementById('container').innerHTML = obj[ "id" ]
     } )
     .catch( function ( err ) {
-      document.body.innerHTML = err.message
+      document.getElementById('container').innerHTML = err.message
     } )
 }
